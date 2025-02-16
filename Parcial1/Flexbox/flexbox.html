@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        .contenedor{
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+
+        .caja{
+            border:3px solid red;
+            background-color:antiquewhite;
+        }
+
+        #caja1{
+            flex-grow: 25;
+        }
+
+        #caja2{
+            flex-grow: 25;
+        }
+
+        #caja3{
+            flex-grow: 25;
+        }
+
+        #caja4{
+            flex-grow: 25;
+        }
+    </style>
+</head>
+<body>
+    <div class ="contenedor">
+        <div id="caja1" class="caja">Caja1</div>
+        <div id="caja2" class="caja">Caja2</div>
+        <div id="caja3" class="caja">Caja3</div>
+        <div id="caja4" class="caja">Caja4</div>
+    </div>
+</body>
+</html>
