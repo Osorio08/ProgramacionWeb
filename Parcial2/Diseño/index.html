@@ -20,7 +20,7 @@
     </header>
     
     <div class="container">
-        <h1>CARTELERA</h1>
+        <h1 id="enc">CARTELERA</h1>
         <input type="text" placeholder="Buscar película...">
         <div class="movie">
             <img src="https://moviepostermexico.com/cdn/shop/files/sonic_the_hedgehog_three_xlg_530x@2x.jpg?v=1736204096" alt="Pelicula 1">
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="movie">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_663304-MLM81023117426_122024-O.webp/" alt="Pelicula 3">
+            <img src="https://preview.redd.it/xyr7di8f63cd1.jpeg?auto=webp&s=ed023207a8aaec1d760df3cc36b57057bec9065d" alt="Pelicula 3">
             <div class="movie-info">
                 <h3>Capitan America: Un Nuevo Mundo</h3>
                 <p><span class="duration">118 min</span> 
@@ -59,5 +59,25 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.onload=function(){
+            /*Diferentes formas de realizar
+            const venc = doucment.getElementById('enc');
+            venc.addEventListener('click', ()=>{
+                alert('Bienvenido a CineMAX!');
+            })
+
+
+            document.getElementById('enc').addEventListener('click', function(){
+                alert('Bienvenido a CineMAX!');
+            })
+            */
+
+            document.getElementById('enc').addEventListener('click', ()=>{
+                alert('Bienvenido a CineMAX!');
+            })
+        };
+    </script>
 </body>
 </html>
