@@ -13,7 +13,7 @@
         </div>
         <nav class="sub-header">
             <a href="#">Cartelera</a>
-            <a href="#">Próximos Estrenos</a>
+            <a id="estr" href="#">Próximos Estrenos</a>
             <a href="#">Preventa</a>
             <a href="#">Promociones</a>
         </nav>
@@ -76,6 +76,10 @@
 
             document.getElementById('enc').addEventListener('click', ()=>{
                 alert('Bienvenido a CineMAX!');
+            })
+
+            document.getElementById('estr').addEventListener('click', ()=>{
+                alert('Actualmente no hay estrenos!');
             })
         };
     </script>
