@@ -1,0 +1,55 @@
+{
+    "lenguajes_de_programacion": [
+      {
+        "nombre": "Python",
+        "popularidad": "Muy alta",
+        "usos": ["Desarrollo web", "Ciencia de datos", "Inteligencia artificial", "Automatización", "Ciberseguridad"]
+      },
+      {
+        "nombre": "JavaScript",
+        "popularidad": "Muy alta",
+        "usos": ["Desarrollo web", "Front-end", "Back-end", "Aplicaciones móviles", "Juegos"]
+      },
+      {
+        "nombre": "Java",
+        "popularidad": "Alta",
+        "usos": ["Desarrollo de aplicaciones empresariales", "Android", "Juegos", "Backend"]
+      },
+      {
+        "nombre": "C#",
+        "popularidad": "Alta",
+        "usos": ["Desarrollo de videojuegos", "Aplicaciones de escritorio", "Desarrollo web con .NET"]
+      },
+      {
+        "nombre": "C++",
+        "popularidad": "Alta",
+        "usos": ["Desarrollo de software de alto rendimiento", "Juegos", "Sistemas embebidos", "Aplicaciones de escritorio"]
+      },
+      {
+        "nombre": "PHP",
+        "popularidad": "Media",
+        "usos": ["Desarrollo web", "Backend", "Sistemas de gestión de contenido"]
+      },
+      {
+        "nombre": "Swift",
+        "popularidad": "Media",
+        "usos": ["Desarrollo de aplicaciones iOS", "Desarrollo de software para Apple"]
+      },
+      {
+        "nombre": "Go",
+        "popularidad": "Media",
+        "usos": ["Desarrollo de servidores", "Cloud computing", "Microservicios"]
+      },
+      {
+        "nombre": "Rust",
+        "popularidad": "Media",
+        "usos": ["Seguridad en sistemas", "Desarrollo de software de bajo nivel", "Aplicaciones concurrentes"]
+      },
+      {
+        "nombre": "Kotlin",
+        "popularidad": "Media",
+        "usos": ["Desarrollo de aplicaciones Android", "Backend", "Multiplataforma"]
+      }
+    ]
+  }
+  

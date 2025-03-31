@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <p id="mensaje">Hola, bienvenido!</p>
+    <input type="text" id="nombre" value="Carlos">
+    <a id="link" href="https://google.com">Google</a>
+    <button id="cambiar">Cambiar</button>
+
+    <script>
+        $(document).ready(function() {      //Espera a que el documento esté listo  
+            $("#cambiar").click(function() {    //Detecta el click en el botón
+                $("#mensaje").text("Texto actualizado!");   //Detecta el elemento con el id mensaje y cambia el texto
+                $("#nombre").val("Nuevo Usuario");  //Detecta el elemento con el id nombre y cambia el valor
+                $("#link").attr("href", "https://microsoft.com").text("Microsoft"); //Detecta el elemento con el id link y cambia el href y el texto
+            });
+        });
+    </script>
+</body>
+</html>
