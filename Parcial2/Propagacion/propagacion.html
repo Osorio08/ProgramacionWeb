@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="containerPadre">
+        <div id="containerHijo1">
+            <button id="btn1">Boton 1</button>
+            <button id="btn2">Boton 2</button>
+            <button id="btn3">Boton 3</button>
+            <button id="btn4">Boton 4</button>
+        </div>
+        <div id="containerHijo2">
+            <button id="btn5">Boton 5</button>
+            <button id="btn6">Boton 6</button>
+            <button id="btn7">Boton 7</button>
+            <button id="btn8">Boton 8</button>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+            document.getElementById('containerPadre').addEventListener("click", (event)=>{
+                console.log("click en el padre");
+                console.log(event.target);
+            })
+
+            document.getElementById('containerHijo1').addEventListener("click", (event)=>{
+                console.log("click en el Hijo");
+                console.log(event.target);
+            })
+
+            document.getElementById('btn4').addEventListener("click", (event)=>{               
+                console.log("click en el boton 4");
+                console.log(event.target);
+            })
+
+            document.getElementById('btn8').addEventListener("click", (event)=>{                
+                console.log("click en el boton 8 SIN PROPAGACION");
+                console.log(event.target);
+                event.stopPropagation(); // Detiene la propagacion del evento hacia el padre
+            })
+        }
+    </script>
+</body>
+</html>
