@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Ejemplo de DOM</h1>
+        <p>Este es un ejemplo de como crear un elemento en el DOM</p>
+        <p>Haz click en un elemento de la lista para cambiar su color de fondo</p>
+        <p>Doble click en un elemento de la lista para eliminarlo</p>   
+    </div>
+    <script>
+        //Crear en el DOM una lista desornedada con los cadenas del arreglo
+        let arreglo=['elemento1','elemento2','elemento3','elemento4','elemento5'];
+        
+        let ul = document.createElement('ul');
+        //Recorrer el arreglo y crear un elemento li por cada elemento del arreglo
+        for (let i = 0; i < arreglo.length; i++) {
+            //Crear el elemento li
+            let li = document.createElement('li');
+            //Asignar el valor del elemento del arreglo al li
+            li.innerHTML = arreglo[i];
+            //Agregar el li al ul
+            ul.appendChild(li);
+        }
+        //Agregar el ul al contenedor
+        let contenedor = document.getElementById('container');
+        contenedor.appendChild(ul);
+        //Agregar un evento al ul para que al hacer doble click en un li se elimine el li
+        ul.addEventListener('dblclick', function(event) {
+            if (event.target.tagName === 'LI') {
+                ul.removeChild(event.target);
+            }
+        });
+        //Agregar un evento al ul para que al hacer click en un li se cambie el color de fondo del li
+        ul.addEventListener('click', function(event) {
+            if (event.target.tagName === 'LI') {
+                event.target.style.backgroundColor = 'yellow';
+            }
+        });
+    </script>
+</body>
+</html>
