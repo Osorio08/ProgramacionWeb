@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ 
+.contenedor {
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 50px;
+    justify-content: left;
+    align-content: top;
+    justify-items:stretch;
+    align-items:stretch;
+    z-index: 0;
+}
+ 
+.caja {
+    border: 1px solid red;
+    background-color:aqua;
+    opacity: 1;
+    z-index: 2;
+}
+ 
+.cajaBoton {
+    width: 150px;
+    height: 50px;
+}
+ 
+
+img{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+}
+
+.cajaClick{
+    opacity: 0;
+}

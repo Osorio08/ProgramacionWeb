@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toggle Imagen</title>
+</head>
+<body>
+    
+    
+    <div id="idcontene" class="contenedor">  
+        <img src="./MJ.jpg" alt="Imagen">
+        
+        <div id="caja1" class="caja"></div>
+        <div id="caja2" class="caja"></div>
+        <div id="caja3" class="caja"></div>
+        <div id="caja4" class="caja"></div>
+        <div id="caja5" class="caja"></div>
+        <div id="caja6" class="caja"></div>
+        <div id="caja7" class="caja"></div>
+        <div id="caja8" class="caja"></div>
+        <div id="caja9" class="caja"></div>
+       
+        <div id="caja10" class="cajaBoton"></div>
+        <div id="caja11" class="cajaBoton"><input id="btnLimpiar" type="button" value="Limpiar"></div>
+        <div id="caja12" class="cajaBoton"></div>
+    </div>
+
+    <script>
+        const cajas = document.querySelectorAll('.caja');
+        cajas.forEach(caja => {
+            caja.addEventListener('click', () => {
+               caja.classList.toggle('cajaClick');
+            });
+        });
+
+        const btnLimpiar = document.getElementById('btnLimpiar');
+        btnLimpiar.addEventListener('click', () => {
+            cajas.forEach(caja => {
+                caja.classList.remove('cajaClick');
+            });
+        });
+    </script>
+</body>
+</html>

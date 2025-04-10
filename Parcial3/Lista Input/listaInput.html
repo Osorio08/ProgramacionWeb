@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista Input</title>
+</head>
+<body>
+    <div class="contanier">
+        <div class="input-group">
+            <input type="text" id="nuevoElemento" placeholder="Nuevo elemento para la lista">
+            <button id="agregarElemento">Agregar elemento</button>
+        </div>
+
+        <ul id="lista"></ul>
+
+    </div>
+    
+    <script>
+        window.onload = function() {
+            let boton = document.getElementById('agregarElemento');
+            boton.addEventListener('click', function() {
+                //Obtener el valor del input
+                let nuevoElemento = document.getElementById('nuevoElemento').value;
+                //Crear el elemento li
+                let li = document.createElement('li');
+                //Asignar el valor del input al li
+                li.textContent = nuevoElemento;
+                //Obtener el ul
+                let ul = document.getElementById('lista');
+                //Agregar el li al ul
+                ul.appendChild(li);
+                //Limpiar el input
+                document.getElementById('nuevoElemento').value = '';
+            }); 
+        } 
+    </script>
+</body>
+</html>
+
